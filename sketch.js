@@ -1,11 +1,17 @@
 var img =new p5.Image(600,600)
 var h = 0
 var t = 0
+var t2 = 0
 var x = 0
 var y = 0
 var x2 = 0
 var y2 = 0
+var x3 = 0
+var y3 = 0
+var x4 = 0
+var y4 = 0
 var step =0.015
+var step2 =0.02
 var hstep = 1
 var radi = 100
 function setup() {
@@ -35,6 +41,14 @@ function draw() {
   t+=step
   x2 = x
   y2 = y
+  strokeWeight(21.1)
+  stroke(0)
+  x3 = (cos(1*t2)*radi);
+  y3 = (sin(2*t2)*radi) / 2;
+  line(x3,y3,x4,y4)
+  t2+=step2
+  x4 = x3
+  y4 = y3
   if(h<360){
     h+=hstep
   } else {
