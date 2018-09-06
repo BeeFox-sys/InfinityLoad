@@ -19,9 +19,9 @@ function setup() {
   } else {
     radi = windowWidth/10
   }
-  x2 = (cos(-step)*radi);
+  x2 = (cos(1*-step)*radi);
   y2 = (sin(2*(-step))*radi) / 2;
-
+  smooth()
 }
 
 function draw() {
@@ -29,7 +29,7 @@ function draw() {
   stroke(h,255,255)
   translate(width/2,height/2)
   scale(2)
-  x = (cos(t)*radi);
+  x = (cos(1*t)*radi);
   y = (sin(2*t)*radi) / 2;
   line(x,y,x2,y2)
   t+=step
